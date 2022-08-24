@@ -81,7 +81,7 @@ if __name__ == '__main__':
             'tools.staticdir.dir': './public'
         }
     }
-
+    cherrypy.server.socket_host = '0.0.0.0'
     cherrypy.engine.subscribe('start', setup_database)
     cherrypy.engine.subscribe('stop', cleanup_database)
 
