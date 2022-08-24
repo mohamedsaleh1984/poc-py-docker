@@ -8,6 +8,6 @@ RUN pip install CherryPy
 
 COPY . .
 
-EXPOSE 8080
+EXPOSE 8000
 
 ENTRYPOINT ["python", "ws.py"]
